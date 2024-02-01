@@ -2,9 +2,9 @@ CREATE DATABASE IC_Moves;
 use IC_Moves;
 
 # Creates the tables
-CREATE TABLE Users(id int primary key, email varchar(50), password varchar(64) NOT NULL);
+CREATE TABLE Users(id int auto_increment not null unique primary key, email varchar(50), password varchar(64) not null, session_token varchar(64));
 CREATE TABLE Properties (
-    id int primary key,
+    id int auto_increment not null primary key,
     name varchar(20) NOT NULL,
     address varchar(255) NOT NULL,
     bedrooms int NOT NULL,
@@ -18,8 +18,8 @@ CREATE TABLE Properties (
     map_link TEXT NOT NULL,
     realtor_number varchar(12) NOT NULL
 );
-CREATE TABLE SavedProperties(user_id int, property_id int);
-CREATE TABLE Images(id int primary key, image_number int, property_id int, alt_description varchar(255));
+CREATE TABLE SavedProperties(user_id int not null, property_id int not null);
+CREATE TABLE Images(id int auto_increment not null primary key, image_number int not null, property_id int not null, alt_description varchar(255) not null);
 
 # Adds the properties
 INSERT INTO Properties (id, name, address, bedrooms, showers, noise_level, property_type, rent, council_tax, furnished, folder, map_link, realtor_number) VALUES (1,'26 Orchard Road','26 Orchard Road, Aberdeen, AB24 3DP',2,1,'4/10','House',800,100,0,'26_Orchard_Road','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1179.6828477315833!2d-2.0992828695505485!3d57.16188535125746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48840e11c405bf69%3A0x884bd97dd7520f91!2s26%20Orchard%20Rd%2C%20Aberdeen%20AB24%203DP!5e0!3m2!1sen!2suk!4v1705884358312!5m2!1sen!2suk','07361 839125'),
@@ -40,3 +40,6 @@ INSERT INTO Properties (id, name, address, bedrooms, showers, noise_level, prope
  (16,'18 Victoria Crescent','18 Victoria Crescent, Belfast, BT7 1NF',2,1,'5','Flat',1100,90,1,'18_Victoria_Crescent','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2300.708762511933!2d-5.935781584296546!3d54.584856780265715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486101b9d6d6939f%3A0xe964d50c7a0850fb!2s18%20Victoria%20Cres%2C%20Belfast%20BT7%201NF%2C%20UK!5e0!3m2!1sen!2suk!4v1643383756249!5m2!1sen!2suk','07854 621984'),
  (17,'5 Crescent Road','5 Crescent Road, Sheffield, S10 2PL',4,2,'7','House',1600,120,1,'5_Crescent_Road','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.29137002693226!2d-1.4950320848394767!3d53.37869933453604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487982ebe22891a5%3A0xc6699327d9c684c0!2s5%20Crescent%20Rd%2C%20Sheffield%20S10%202PL%2C%20UK!5e0!3m2!1sen!2suk!4v1643383858357!5m2!1sen!2suk','07723 891456'),
  (18,'24 Park Avenue','24 Park Avenue, Swansea, SA1 5AJ',3,2,'6','House',1400,100,0,'24_Park_Avenue','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1698.2727965187815!2d-3.9466651849662783!3d51.62229841249525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e6e638dfc3147%3A0xd7f85a3ee60d4088!2s24%20Park%20Ave%2C%20Swansea%20SA1%205AJ%2C%20UK!5e0!3m2!1sen!2suk!4v1643383943465!5m2!1sen!2suk','07632 456789');
+
+INSERT INTO Users (id, email, password, session_token) VALUES (1, 'daniel.mcpherson@live.co.uk', '79032b8a85663acddd601fd25371b7cb91f3ee6fbe68215f3cf6d4736bcbeea9', null),
+(2, 'test@example.com', '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', null);

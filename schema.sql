@@ -58,13 +58,13 @@ VALUES
 (2, 4, 'A bedroom with a large window'),
 (2, 5, 'A bathtub in a bathroom'),
 
-(3, 1, 'A wooden house in the desert'),
+(3, 1, 'A building with plants on the balconies'),
 (3, 2, 'A living room with a TV and a fireplace'),
 (3, 3, 'A kitchen with a large island and white cabinets'),
 (3, 4, 'A bedroom with a bed and a rug'),
 (3, 5, 'A bedroom with a bed and a bench'),
 
-(4, 1, 'A house with a driveway and a pink sky'),
+(4, 1, 'A tall building with balconies and windows'),
 (4, 2, 'A living room with a large window and a couch'),
 (4, 3, 'A kitchen with white cabinets and stainless steel appliances'),
 (4, 4, 'A bedroom with a bed and two stools'),
@@ -118,13 +118,13 @@ VALUES
 (12, 4, 'A bedroom with a bed and two lamps next to it'),
 (12, 5, 'A bathroom with a marble countertop and a toilet'),
 
-(13, 1, 'A white house with a lawn and a walkway'),
+(13, 1, 'A balcony with potted plants on it'),
 (13, 2, 'A living room with a couch and a TV'),
 (13, 3, 'A kitchen with black cabinets and gold handles'),
 (13, 4, 'A bedroom with a bed and a bench'),
 (13, 5, 'A bathroom with a tub and a shower'),
 
-(14, 1, 'A house with a driveway and a garage'),
+(14, 1, 'A brick building with windows and two bikes outside'),
 (14, 2, 'A living room with a television and plants'),
 (14, 3, 'A kitchen with a large window'),
 (14, 4, 'A bedroom with a bed and a bench'),

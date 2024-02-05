@@ -43,3 +43,113 @@ INSERT INTO Properties (id, name, address, bedrooms, showers, noise_level, prope
 
 INSERT INTO Users (id, email, password, session_token) VALUES (1, 'daniel.mcpherson@live.co.uk', '79032b8a85663acddd601fd25371b7cb91f3ee6fbe68215f3cf6d4736bcbeea9', null),
 (2, 'test@example.com', '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', null);
+
+INSERT INTO Images (property_id, image_id, alt_description)
+VALUES
+(1, 1, 'A house with a garage and a driveway'),
+(1, 2, 'A living room with a television on the wall'),
+(1, 3, 'A kitchen with grey cabinets and white countertops'),
+(1, 4, 'A bed with pillows and lamps in a room'),
+(1, 5, 'A bathroom with a bath and shower'),
+
+(2, 1, 'A house with a lawn and a tree'),
+(2, 2, 'A living room with a TV and couch'),
+(2, 3, 'A kitchen with white cabinets and white countertops'),
+(2, 4, 'A bedroom with a large window'),
+(2, 5, 'A bathtub in a bathroom'),
+
+(3, 1, 'A wooden house in the desert'),
+(3, 2, 'A living room with a TV and a fireplace'),
+(3, 3, 'A kitchen with a large island and white cabinets'),
+(3, 4, 'A bedroom with a bed and a rug'),
+(3, 5, 'A bedroom with a bed and a bench'),
+
+(4, 1, 'A house with a driveway and a pink sky'),
+(4, 2, 'A living room with a large window and a couch'),
+(4, 3, 'A kitchen with white cabinets and stainless steel appliances'),
+(4, 4, 'A bedroom with a bed and two stools'),
+(4, 5, 'A bathroom with a sink and toilet'),
+
+(5, 1, 'A house with a driveway'),
+(5, 2, 'A living room with a couch and dining table'),
+(5, 3, 'A kitchen with white cabinets and stainless steel appliances'),
+(5, 4, 'A bathroom with marble countertop and sink'),
+(5, 5, 'A bathroom with a bath and shower curtain'),
+
+(6, 1, 'A white house with a white picket fence and trees'),
+(6, 2, 'A couch with pillows and a painting on the wall'),
+(6, 3, 'A kitchen with a bar and stools'),
+(6, 4, 'A bedroom with a black wall and a bed'),
+(6, 5, 'A bathroom with a tub and sink'),
+
+(7, 1, 'A small house with a small garden outside'),
+(7, 2, 'A bedroom with a TV and a bed'),
+(7, 3, 'A kitchen with white cabinets and black appliances'),
+(7, 4, 'A bedroom with a large bed and a rug'),
+(7, 5, 'A bathroom with a shower curtain and sink'),
+
+(8, 1, 'A house with a lawn and a sidewalk'),
+(8, 2, 'A living room with a couch and a coffee table'),
+(8, 3, 'A large kitchen with a large counter in the middle'),
+(8, 4, 'A bathroom with blue tiles'),
+(8, 5, 'A bathroom with a tub and a mirror'),
+
+(9, 1, 'A house on a dirt hill'),
+(9, 2, 'A living room with a couch and a coffee table'),
+(9, 3, 'A kitchen with white cabinets and black handles'),
+(9, 4, 'A bedroom with a desk and a bed'),
+(9, 5, 'A bathroom with a white door and two round mirrors'),
+
+(10, 1, 'A red house with a chimney on grass'),
+(10, 2, 'A living room with a staircase and a couch'),
+(10, 3, 'A kitchen with a marble counter and some chairs'),
+(10, 4, 'A bedroom with a bed and a bench'),
+(10, 5, 'A bathroom with a glass shower and a sink'),
+
+(11, 1, 'A house with a driveway and lawn'),
+(11, 2, 'A room with a table and chairs'),
+(11, 3, 'A kitchen with blue and white cabinets'),
+(11, 4, 'A large room with a bed and couches'),
+(11, 5, 'A bathroom with a sink and a tub'),
+
+(12, 1, 'A large house with a lake'),
+(12, 2, 'A living room with a couch and dining table'),
+(12, 3, 'A kitchen with a sink and a stove'),
+(12, 4, 'A bedroom with a bed and two lamps next to it'),
+(12, 5, 'A bathroom with a marble countertop and a toilet'),
+
+(13, 1, 'A white house with a lawn and a walkway'),
+(13, 2, 'A living room with a couch and a TV'),
+(13, 3, 'A kitchen with black cabinets and gold handles'),
+(13, 4, 'A bedroom with a bed and a bench'),
+(13, 5, 'A bathroom with a tub and a shower'),
+
+(14, 1, 'A house with a driveway and a garage'),
+(14, 2, 'A living room with a television and plants'),
+(14, 3, 'A kitchen with a large window'),
+(14, 4, 'A bedroom with a bed and a bench'),
+(14, 5, 'A bathroom with a tub and double sinks'),
+
+(15, 1, 'A house next to a large body of water'),
+(15, 2, 'A living room with a couch and a TV'),
+(15, 3, 'A kitchen with white cabinets and a sink'),
+(15, 4, 'A bedroom with pillows and a plant'),
+(15, 5, 'A bathroom with a blue ceiling'),
+
+(16, 1, 'A house with two garages'),
+(16, 2, 'A living room with a couch and rug'),
+(16, 3, 'A kitchen with a bar and stools'),
+(16, 4, 'A bed with white bedding and white lamps'),
+(16, 5, 'A white toilet with the seat up'),
+
+(17, 1, 'A house with a lawn'),
+(17, 2, 'A living room with a couch and a table and a TV'),
+(17, 3, 'A kitchen with a table and chairs'),
+(17, 4, 'A bedroom with a bed and a chair'),
+(17, 5, 'A bathroom with a glass shower and a sink'),
+
+(18, 1, 'A house with a lawn and a sign'),
+(18, 2, 'A living room with a couch and a table'),
+(18, 3, 'A kitchen with a table and chairs'),
+(18, 4, 'A bedroom with a bed and a bench'),
+(18, 5, 'A bathroom with a sink and a shower');

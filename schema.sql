@@ -44,7 +44,7 @@ INSERT INTO Properties (id, name, address, bedrooms, showers, noise_level, prope
 INSERT INTO Users (id, email, password, session_token) VALUES (1, 'daniel.mcpherson@live.co.uk', '79032b8a85663acddd601fd25371b7cb91f3ee6fbe68215f3cf6d4736bcbeea9', null),
 (2, 'test@example.com', '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', null);
 
-INSERT INTO Images (property_id, image_id, alt_description)
+INSERT INTO Images (property_id, image_number, alt_description)
 VALUES
 (1, 1, 'A house with a garage and a driveway'),
 (1, 2, 'A living room with a television on the wall'),

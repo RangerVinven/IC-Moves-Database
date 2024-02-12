@@ -1,19 +1,32 @@
+version: "3"
+
 services:
+  web:
+    image: ic-moves-web
+    build: ../IC-Moves
+    ports:
+      - "3000:3000"
+    networks:
+      - ic-moves
+
   api:
-    container_name: IC-Moves-api
-    build: IC-Moves-API
+    image: ic-moves-api
+    build: ../IC-Moves-API
     ports:
       - "8000:8000"
+    depends_on:
+      - db
     networks:
-      - IC-Moves-Network
+    - ic-moves
 
   db:
-    container_name: IC-Moves-db
-    build: IC-Moves-Database
+    image: ic-moves-db
+    build: .
     ports:
       - "3306:3306"
     networks:
-      - IC-Moves-Network
+      - ic-moves
 
 networks:
-  IC-Moves-Network:
+  ic-moves:
+    driver: bridge

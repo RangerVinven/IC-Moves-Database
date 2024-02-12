@@ -26,7 +26,12 @@ services:
       - "3306:3306"
     networks:
       - ic-moves
+    volumes:
+      - data_volume:/var/lib/mysql
 
 networks:
   ic-moves:
     driver: bridge
+
+volumes:
+  data_volume:

@@ -1,0 +1,19 @@
+services:
+  api:
+    container_name: IC-Moves-api
+    build: IC-Moves-API
+    ports:
+      - "8000:8000"
+    networks:
+      - IC-Moves-Network
+
+  db:
+    container_name: IC-Moves-db
+    build: IC-Moves-Database
+    ports:
+      - "3306:3306"
+    networks:
+      - IC-Moves-Network
+
+networks:
+  IC-Moves-Network:
